@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+   <div id="header">Tic-Tac-Toe</div>
+   <div id="game-info">
+    <form id="get-player-info">
+        <div id="p1">
+            <div class="player-number">Player1</div>
+            <div id="p1-info">
+                <label>
+                Name: <p><input type="text" maxlength="25" name="p1name" required></p>
+                </label>
+                <label>
+                Marker (1 character): <p><input type="text" maxlength="1" value="X" name="p1mark" required></p>
+                </label>
+            </div>
+        </div>
+        <div id="middle-info"><input id="start-game" type="submit" value="Start Game"></div>
+        <div id="p2">
+            <div class="player-number">Player2</div>
+            <div id="p2-info">
+                <label>
+                Name: <p><input type="text" maxlength="25" name="p2name" required></p>
+                </label>
+                <label>
+                Marker (1 character): <p><input type="text" maxlength="1" value="O" name="p2mark" required></p>
+                </label>
+            </div>
+        </div>
+    </form>
+   </div>
+   <div id="gameboard">
+    <div id="game-container">
+        <div class="gamesquare empty" id="square0" data-square="0"></div>
+        <div class="gamesquare empty" id="square1" data-square="1"></div>
+        <div class="gamesquare empty" id="square2" data-square="2"></div>
+        <div class="gamesquare empty" id="square3" data-square="3"></div>
+        <div class="gamesquare empty" id="square4" data-square="4"></div>
+        <div class="gamesquare empty" id="square5" data-square="5"></div>
+        <div class="gamesquare empty" id="square6" data-square="6"></div>
+        <div class="gamesquare empty" id="square7" data-square="7"></div>
+        <div class="gamesquare empty" id="square8" data-square="8"></div>
+    </div>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
